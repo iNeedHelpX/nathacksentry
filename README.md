@@ -11,9 +11,9 @@ to align the header title to the center
 
 *Fearless is an exposure therapy app that allows the user to do exposure therapy and have control from the privacy of their own home.*
 
-<h1 align="center">$\textcolor{#30C68F}{\huge\mathbb {The technical details}}$</h1>
+<h1 align="center">$\textcolor{#30C68F}{\huge\mathbb{The technical details}}$</h1>
 
-<div align="center">Technologies used in this app</h3>
+<div align="center"><h3 align="center">Technologies used in this app</h3>
 
 <li> <b>Flutter/dart</b> For mobile app front end<br></li>
 <li> <b>Firebase</b> For database and auth (at a later point).<br></li>
