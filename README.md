@@ -10,8 +10,8 @@ to align the header title to the center
 # **$\textcolor{#F616AB}{\text{About this App}}$**
 
 *Fearless is an exposure therapy app that allows the user to do exposure therapy and have control from the privacy of their own home.*
-$\mathrm{Helo hom}$
-<h1 align="center">$\textcolor{#30C68F}{\huge\mathcal{The technical details}}$</h1>
+
+<h1 align="center">$\textcolor{#30C68F}{\huge\mathcal{The\ technical\ details}}$</h1>
 
 <div align="center"><h3 align="center">Technologies used in this app</h3>
 
@@ -27,4 +27,4 @@ $\mathrm{Helo hom}$
 
 You must have the flutter sdk installed. This app runs firebase for both login and datastorage. An apk is provided on my hackathon submission for this purpose so you can validate that this app works. It is also suggested that you know how to work with solidity smart contracts and run on the ethereum textnet, but that is not wholly required as that's a slim portion of the app, really only geared towards less then 5% of customers and it's just me trying to learn new things.
 
-$\documentclass[12pt]{article}\usepackage{fontspec}\setmainfont{Times New Roman}\title{Sample font document}\author{Overleaf}\date{\today}\begin{document}\maketitle This is an\textit{example} of a document compiled with \textbf{XeLaTeX}.LuaLaTeX should also work too.\end{document}$
+
