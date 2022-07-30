@@ -30,6 +30,6 @@ You must have the flutter sdk installed. This app runs firebase for both login a
 
  $FontFace={sbc}{i}{Font=*Condensed SemiBold Italic}$
  $FontFace={bc}{i}{Font=*Condensed Bold Italic}$
-\textxbc{Abc Black}{\xbcseries Black}{Hello}\\
+
 
 $\contourlength{0.05}\contour[5]{red}{\textsc{Hello}}$
