@@ -3,7 +3,9 @@
 to align the header title to the center
 <h2 align="center">by: Julia Pak</h2>
 -->
-<p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/176600300-e9c9fa92-7bb8-40de-b8b8-d16b774c3ba6.png" width="250"><br><sup><em>App icon</sup></em></p>
+
+
+<p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/181997005-7f584729-eb1c-41b1-9a90-e9da21108e66.png" width="250"><br><sup><em>App icon</sup></em></p>
 
 # **$\textcolor{#F616AB}{\text{About this App}}$**
 
