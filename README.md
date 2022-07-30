@@ -13,7 +13,7 @@ to align the header title to the center
 
  $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
 
-$\DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{However}$
+$\DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{}$
 <h1 align="center">$\textcolor{#30C68F}{\huge\textbf{The technical details}}$</h1>
 
 <div align="center"><h3 align="center">Technologies used in this app</h3>
