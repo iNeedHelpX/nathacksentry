@@ -13,6 +13,7 @@ to align the header title to the center
 
  $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
  $\\tt{sentence here we are}\ x$
+
  $x\ \texttt{blah}\ x$
 <h1 align="center">$\textcolor{#30C68F}{\huge\mathbb {The technical details}}$</h1>
 
