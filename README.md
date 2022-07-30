@@ -13,8 +13,8 @@ to align the header title to the center
 
  $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
 
-<h1 align="center">$\textcolor{#30C68F}{\huge\mathcal{The technical details}}$</h1>
-
+<h1 align="center">$\textcolor{#30C68F}{\huge \mathcal{The technical details}}$</h1>
+$x\ \tt{sentence}\ x$
 <div align="center"><h3 align="center">Technologies used in this app</h3>
 
 <li> <b>Flutter/dart</b> For mobile app front end<br></li>
@@ -27,4 +27,3 @@ to align the header title to the center
 <p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/176866330-764ec99a-8803-43cd-8181-b24b18143dc9.png" height="500"><br><sup><em>Organization of the file structure(essentially MVVM)...Plus I use VSCode!</sup></em></p>
 
 You must have the flutter sdk installed. This app runs firebase for both login and datastorage. An apk is provided on my hackathon submission for this purpose so you can validate that this app works. It is also suggested that you know how to work with solidity smart contracts and run on the ethereum textnet, but that is not wholly required as that's a slim portion of the app, really only geared towards less then 5% of customers and it's just me trying to learn new things.
-$x\ \tt{sentence}\ x$
