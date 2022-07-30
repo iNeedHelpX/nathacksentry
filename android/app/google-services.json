@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "170708025656",
+    "project_id": "nathacks-b7517",
+    "storage_bucket": "nathacks-b7517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170708025656:android:7f6a1a9c45b8ee511241cd",
+        "android_client_info": {
+          "package_name": "com.juliapak.nathacksentry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170708025656-6k754pgjjpsicn1r2n14dakc8dot6eak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl05q0Tl0OyRhbpLo-RwK4ejYr8aV1u0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170708025656-6k754pgjjpsicn1r2n14dakc8dot6eak.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "170708025656-igkqhg67v7enakalke4542rm7eju6ou9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.juliapak.nathacksentry"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
