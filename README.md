@@ -10,7 +10,7 @@ to align the header title to the center
 # **$\textcolor{#F616AB}{\text{About this App}}$**
 
 *Fearless is an exposure therapy app that allows the user to do exposure therapy and have control from the privacy of their own home.*
-$\big( \Big( \bigg( \Bigg BIG$
+$\big( \Big( \bigg( \BiggBIG$
 
 <h1 align="center">$\textcolor{#30C68F}{\huge\mathbb {The technical details}}$</h1>
 
