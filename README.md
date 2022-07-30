@@ -31,7 +31,7 @@ You must have the flutter sdk installed. This app runs firebase for both login a
 
 
 
-\documentclass{article}
+$\documentclass{article}
 \usepackage{contour}% http://ctan.org/pkg/contour
 \setlength{\parindent}{0pt}% Just for this example
 \begin{document}
@@ -62,7 +62,7 @@ Hello
 \contourlength{0.05em}
 \contour[5]{red}{\textsc{Hello}}
 
-\end{document}
+\end{document}$
 <!--
 ## This uses the Rapyd API sandbox and Virtual Accounts
 
