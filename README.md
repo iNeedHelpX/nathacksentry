@@ -59,8 +59,7 @@ Hello
 \contour[100]{black}{\textsc{Hello}}% 100 copies
 
 % Just for reference
-\contourlength{0.05em}
-\contour[5]{red}{\textsc{Hello}}
+$\contourlength{0.05em}\contour[5]{red}{\textsc{Hello}}$
 
 \end{document}$
 <!--
