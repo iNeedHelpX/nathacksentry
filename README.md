@@ -31,7 +31,7 @@ You must have the flutter sdk installed. This app runs firebase for both login a
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{fix-cm}
-
+fghfh
 \begin{document}
 \textsc{Foo} \textsc{\textbf{bar}}
 \end{document}
