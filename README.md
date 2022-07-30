@@ -8,13 +8,13 @@ to align the header title to the center
 # **$\textcolor{#F616AB}{\text{About this App}}$**
 
 *Fearless is an exposure therapy app that allows the user to do exposure therapy and have control from the privacy of their own home.*
-
+<!--
  ***Three other apps need to be written/integrated in addition to this app:***
 
 - Gig worker side mobile app.
 - An app for merchants to manage sales etc. This app will be suited towards tablets.
 - Some sort of admin application/portal for the company (me and my team). This is for monitoring day to day kpms, general management, on boarding gig workers, basic customer service etc.
-
+-->
 **<h1 align="center">$\textcolor{#F9038D}{\text{The technical details}}$</h1>**
 
 <div align="center"><h3 align="center">Technologies used in this app</h3>
