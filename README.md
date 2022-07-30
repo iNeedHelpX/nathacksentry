@@ -12,8 +12,8 @@ to align the header title to the center
 *Fearless is an exposure therapy app that allows the user to do exposure therapy and have control from the privacy of their own home.*
 
  $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
-
-<h1 align="center">$\DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{}\textcolor{#30C68F}{\huge\textbf{The technical details}}$</h1>
+\DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{However}
+<h1 align="center">$\textcolor{#30C68F}{\huge\textbf{The technical details}}$</h1>
 
 <div align="center"><h3 align="center">Technologies used in this app</h3>
 
