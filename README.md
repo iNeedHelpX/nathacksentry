@@ -18,7 +18,8 @@ to align the header title to the center
 - Some sort of admin application/portal for the company (me and my team). This is for monitoring day to day kpms, general management, on boarding gig workers, basic customer service etc.
 -->
 
- $\textcolor{red}{red}, violets are \textcolor{blue}{blue}.
+ $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
+
 <h1 style="text-align:center">$\textcolor{#30C68F}{\text{The technical details}}$</h1>
 
 <div align="center"><h3 align="center">Technologies used in this app</h3>
