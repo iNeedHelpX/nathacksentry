@@ -28,10 +28,10 @@ to align the header title to the center
 
 You must have the flutter sdk installed. This app runs firebase for both login and datastorage. An apk is provided on my hackathon submission for this purpose so you can validate that this app works. It is also suggested that you know how to work with solidity smart contracts and run on the ethereum textnet, but that is not wholly required as that's a slim portion of the app, really only geared towards less then 5% of customers and it's just me trying to learn new things.
 
-\documentclass{article}
+$\documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{fix-cm}
-fghfh
+
 \begin{document}
 \textsc{Foo} \textsc{\textbf{bar}}
-\end{document}
+\end{document}$
