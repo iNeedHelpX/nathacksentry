@@ -12,7 +12,7 @@ to align the header title to the center
 *Fearless is an exposure therapy app that allows the user to do exposure therapy and have control from the privacy of their own home.*
 
  $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
- $x\ \tt{sentence}\ x$
+ $x\ \tt{sentence here we are}\ x$
 
 <h1 align="center">$\textcolor{#30C68F}{\huge\mathbb {The technical details}}$</h1>
 
