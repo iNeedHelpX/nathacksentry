@@ -13,8 +13,8 @@ to align the header title to the center
 
  $\textcolor{red}{red}, violets are \textcolor{blue}{blue}$.
 
-<h1 align="center">$\textcolor{#30C68F}{\huge\\mathcal{The technical details}}$</h1>
-$x\ \tt{sentence}\ x$
+<h1 align="center">$\textcolor{#30C68F}{\huge\mathcal {The technical details}}$</h1>
+
 <div align="center"><h3 align="center">Technologies used in this app</h3>
 
 <li> <b>Flutter/dart</b> For mobile app front end<br></li>
