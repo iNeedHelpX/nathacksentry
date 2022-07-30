@@ -17,7 +17,7 @@ to align the header title to the center
 - An app for merchants to manage sales etc. This app will be suited towards tablets.
 - Some sort of admin application/portal for the company (me and my team). This is for monitoring day to day kpms, general management, on boarding gig workers, basic customer service etc.
 -->
-**<h1 align="center">$\textcolor{#8FFF26}{\text{The technical details}}$</h1>**
+**<h1 align="center">$\textcolor{#31DB9D}{\text{**The technical details**}}$</h1>**
 
 <div align="center"><h3 align="center">Technologies used in this app</h3>
 
