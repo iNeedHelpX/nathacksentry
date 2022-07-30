@@ -27,7 +27,7 @@ $\mathrm{Helo hom}$
 
 You must have the flutter sdk installed. This app runs firebase for both login and datastorage. An apk is provided on my hackathon submission for this purpose so you can validate that this app works. It is also suggested that you know how to work with solidity smart contracts and run on the ethereum textnet, but that is not wholly required as that's a slim portion of the app, really only geared towards less then 5% of customers and it's just me trying to learn new things.
 
-$\begin{tikzpicture}
+$$\begin{tikzpicture}
 \newcounter{density}
 \setcounter{density}{20}
     \def\couleur{red}
@@ -44,4 +44,4 @@ $\begin{tikzpicture}
                             -- (X) coordinate[pos=.15](C);
         \draw[fill=\couleur!\thedensity] (A)--(B)--(C)--cycle;
     }
-\end{tikzpicture}$
+\end{tikzpicture}$$
