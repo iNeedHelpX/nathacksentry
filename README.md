@@ -29,6 +29,40 @@ $\DeclareFontShape{T1}{lmr}{b}{sc}{<->ssub*cmr/bx/sc}{}$
 
 You must have the flutter sdk installed. This app runs firebase for both login and datastorage. An apk is provided on my hackathon submission for this purpose so you can validate that this app works. It is also suggested that you know how to work with solidity smart contracts and run on the ethereum textnet, but that is not wholly required as that's a slim portion of the app, really only geared towards less then 5% of customers and it's just me trying to learn new things.
 
+
+
+\documentclass{article}
+\usepackage{contour}% http://ctan.org/pkg/contour
+\setlength{\parindent}{0pt}% Just for this example
+\begin{document}
+
+% Default
+Hello
+
+% Bold
+\textbf{Hello}
+
+% Small-caps
+\textsc{Hello}
+
+% Combined
+\textbf{\textsc{Hello}}
+
+% Default \contourlength (0.03em)
+\contour{black}{\textsc{Hello}}
+
+\contourlength{0.01em}% Smaller radius
+\contour{black}{\textsc{Hello}}
+
+\contour*{black}{\textsc{Hello}}% 32 copies (default is 16)
+
+\contour[100]{black}{\textsc{Hello}}% 100 copies
+
+% Just for reference
+\contourlength{0.05em}
+\contour[5]{red}{\textsc{Hello}}
+
+\end{document}
 <!--
 ## This uses the Rapyd API sandbox and Virtual Accounts
 
