@@ -8,10 +8,11 @@ class NeuromorphicBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.red,
       alignment: Alignment.center,
       transformAlignment: Alignment.center,
       child: Container(
-        color: Color.fromARGB(255, 239, 230, 235),
+        // color: Color.fromARGB(255, 239, 230, 235),
         // color: Color.fromARGB(255, 242, 227, 234),
         child: Container(
           width: 150,
