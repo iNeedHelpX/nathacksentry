@@ -21,7 +21,7 @@ class _StartState extends State<Start> {
         },
 
         //replace this with a call to a switch statement to check for login state
-        child: MyHomePage(),
+        child: AppSetup(),
       ),
 
       //genrates the routes for the app
