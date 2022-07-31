@@ -21,9 +21,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  'title',
-                ),
+                title!,
               ],
             ),
           ),
