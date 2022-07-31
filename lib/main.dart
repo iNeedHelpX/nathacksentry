@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:nathacksentry/start/app_setup.dart';
 import 'package:nathacksentry/start/start.dart';
 
 Future<void> main() async {
