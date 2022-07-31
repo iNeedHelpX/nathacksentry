@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
-import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/containers/infobox.dart';
 import 'package:nathacksentry/containers/neuromorphicbox.dart';
 
