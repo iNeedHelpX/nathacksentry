@@ -41,7 +41,7 @@ class _AppSetupState extends State<AppSetup> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: FlutterGradients.angelCare()),
+      decoration: BoxDecoration(gradient: FlutterGradients.warmFlame()),
       child: Scaffold(
         appBar: MainAppBar(
           title: Text(
