@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nathacksentry/colors/bluepurple_gradient.dart';
-import 'package:nathacksentry/colors/gradient.dart';
 import 'package:nathacksentry/colors/lightpurple_gradient.dart';
-import 'package:nathacksentry/colors/yellowpink_grad.dart';
+import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   //makes text optional
@@ -17,7 +15,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: ClipPath(
           clipper: WaveClip(),
           child: Container(
-            decoration: BoxDecoration(gradient: lightPurpleGrad()),
+            decoration: BoxDecoration(gradient: FlutterGradients.perfectBlue()),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[title],

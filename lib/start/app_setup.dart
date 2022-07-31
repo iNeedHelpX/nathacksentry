@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gradients/flutter_gradients.dart';
+import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nathacksentry/bars/mainappbar_top.dart';
 import 'package:nathacksentry/bars/bottom_bar_items.dart';
@@ -41,7 +41,9 @@ class _AppSetupState extends State<AppSetup> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: FlutterGradients.warmFlame()),
+      decoration: BoxDecoration(
+          gradient: FlutterGradients.confidentCloud(
+              type: GradientType.linear, tileMode: TileMode.values[0])),
       child: Scaffold(
         appBar: MainAppBar(
           title: Text(
@@ -55,7 +57,7 @@ class _AppSetupState extends State<AppSetup> {
         extendBody: true,
         bottomNavigationBar: RollingBottomBar(
           color: barback2,
-          itemColor: Colors.black,
+          itemColor: bg2,
           controller: _controller,
           useActiveColorByDefault: false,
           items: bottomBarItems,
