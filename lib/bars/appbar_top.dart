@@ -34,7 +34,7 @@ AppBar myRadialBar(BuildContext context) {
         children: [
           Text(
             "Fearless",
-            style: GoogleFonts.damion(
+            style: GoogleFonts.sriracha(
               color: fill2,
               fontWeight: FontWeight.w800,
               fontSize: 65,
