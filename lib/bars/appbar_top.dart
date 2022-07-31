@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:nathacksentry/colors/colours_list.dart';
-import 'package:nathacksentry/colors/gradient.dart';
+import 'package:nathacksentry/colors/orange_grad.dart';
 
 class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
   //makes text optional
@@ -16,7 +14,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: ClipPath(
           clipper: WaveClip(),
           child: Container(
-            color: Colors.blue,
+            decoration: BoxDecoration(gradient: yellowGrad()),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[

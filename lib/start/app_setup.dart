@@ -40,7 +40,7 @@ class _AppSetupState extends State<AppSetup> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MainAppBar(
-        title: Text("home"),
+        title: Text("Fearless"),
       ),
       backgroundColor: bg,
       body: pageViews(),
