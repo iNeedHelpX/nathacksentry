@@ -165,7 +165,9 @@ class _AppSetupState extends State<AppSetup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myRadialBar(context),
+      appBar: MainAppBar(
+        title: Text("home"),
+      ),
       backgroundColor: bg,
       body: pageViews(),
       extendBody: true,

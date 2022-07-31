@@ -4,51 +4,48 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/colors/gradient.dart';
 
-AppBar myRadialBar(BuildContext context) {
-  return AppBar(
-    shadowColor: textgreyblue,
-
-    flexibleSpace: ClipRRect(
-      borderRadius: BorderRadius.only(
-        bottomLeft: Radius.circular(24),
-        bottomRight: Radius.circular(24),
-      ),
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: lightGrad(),
-        ),
-      ),
-    ),
-    elevation: 16,
-
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.only(
-        bottomLeft: Radius.circular(24),
-        bottomRight: Radius.circular(24),
-      ),
-    ),
-    //set size of appbar. This is sort of big
-    bottom: PreferredSize(
-      preferredSize: Size.fromHeight(70),
-      child: Stack(
-        children: [
-          Text(
-            "Fearless",
-            style: GoogleFonts.sriracha(
-              color: fill2,
-              fontWeight: FontWeight.w800,
-              fontSize: 65,
-              shadows: [
-                Shadow(
-                  offset: Offset(8, 8.0),
-                  blurRadius: 17.0,
-                  color: fill2.withOpacity(0.6),
-                )
+class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
+  //makes text optional
+  final Text? title;
+  final double barHeight = 50.0;
+  MainAppBar({Key? key, this.title}) : super(key: key);
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight + 100.0);
+  @override
+  Widget build(BuildContext context) {
+    return PreferredSize(
+        child: ClipPath(
+          clipper: WaveClip(),
+          child: Container(
+            color: Colors.blue,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                title!,
               ],
             ),
           ),
-        ],
-      ),
-    ),
-  );
+        ),
+        preferredSize: Size.fromHeight(kToolbarHeight + 100));
+  }
+}
+
+class WaveClip extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    Path path = new Path();
+    final lowPoint = size.height - 30;
+    final highPoint = size.height - 60;
+    path.lineTo(0, size.height);
+    path.quadraticBezierTo(size.width / 4, highPoint, size.width / 2, lowPoint);
+    path.quadraticBezierTo(
+        3 / 4 * size.width, size.height, size.width, lowPoint);
+    path.lineTo(size.width, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    return false;
+  }
 }
