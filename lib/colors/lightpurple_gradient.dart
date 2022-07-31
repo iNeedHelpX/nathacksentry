@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:nathacksentry/colors/colours_list.dart';
 
 LinearGradient lightPurpleGrad() {
-  return LinearGradient(colors: [
-    Color.fromARGB(255, 181, 146, 243),
-    Color.fromARGB(255, 152, 142, 225),
-    Color.fromARGB(255, 135, 125, 204),
-  ], begin: Alignment.bottomRight, end: Alignment.topLeft);
+  return LinearGradient(
+      colors: [Color.fromARGB(255, 124, 122, 245), barback],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight);
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-LinearGradient yellowGrad() {
+LinearGradient yellowPinkGrad() {
   return LinearGradient(colors: [
     Color.fromARGB(255, 254, 196, 113),
-    Color.fromARGB(255, 204, 100, 253),
+    Color.fromARGB(255, 255, 150, 246)
   ], begin: Alignment.topLeft, end: Alignment.bottomRight);
 }

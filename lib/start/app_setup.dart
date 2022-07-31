@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nathacksentry/bars/appbar_top.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:nathacksentry/bars/mainappbar_top.dart';
 import 'package:nathacksentry/bars/bottom_bar_items.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/pages/account_page.dart';
@@ -40,13 +41,17 @@ class _AppSetupState extends State<AppSetup> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MainAppBar(
-        title: Text("Fearless"),
+        title: Text(
+          "Fearless",
+          style: GoogleFonts.nothingYouCouldDo(
+              color: textturq2, fontSize: 45, fontWeight: FontWeight.w900),
+        ),
       ),
       backgroundColor: bg,
       body: pageViews(),
       extendBody: true,
       bottomNavigationBar: RollingBottomBar(
-        color: textturq2,
+        color: barback2,
         itemColor: Colors.black,
         controller: _controller,
         useActiveColorByDefault: false,
