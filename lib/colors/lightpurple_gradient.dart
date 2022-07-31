@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-LinearGradient bluePurpleGrad() {
+LinearGradient lightPurpleGrad() {
   return LinearGradient(colors: [
     Color.fromARGB(255, 181, 146, 243),
     Color.fromARGB(255, 152, 142, 225),
