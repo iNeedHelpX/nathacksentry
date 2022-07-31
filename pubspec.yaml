@@ -46,6 +46,7 @@ dependencies:
   rolling_bottom_bar: ^0.2.2
   fancy_bottom_navigation: ^0.3.3
   decorative_app_bar: ^0.0.2
+  flutter_gradients: ^1.0.0+3
 
 dev_dependencies:
   flutter_test:
