@@ -29,9 +29,9 @@ class _AboutAppState extends State<AboutApp> {
             padding: EdgeInsets.only(
                 //This is the padding around the text!
                 left: 15,
-                top: 10,
+                top: 5,
                 right: 15,
-                bottom: 5),
+                bottom: 20),
             width: 400,
             margin: EdgeInsets.only(top: 10),
             decoration: _decor(),
@@ -54,10 +54,18 @@ class _AboutAppState extends State<AboutApp> {
       borderRadius: BorderRadius.circular(10),
       gradient: FlutterGradients.freshMilk(),
       boxShadow: [
+        //shadow
         BoxShadow(
-          color: fill2,
-          offset: Offset(6, 8),
-          blurRadius: 12,
+          color: Color.fromARGB(255, 242, 227, 234),
+          offset: Offset(-12.0, -12.0),
+          blurRadius: 35,
+          spreadRadius: 0.0,
+        ),
+        BoxShadow(
+          color: Color.fromARGB(255, 197, 182, 185),
+          offset: Offset(12.0, 12.0),
+          blurRadius: 34,
+          spreadRadius: 0.0,
         ),
       ],
     );

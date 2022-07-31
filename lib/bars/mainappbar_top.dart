@@ -1,47 +1,57 @@
 import 'package:flutter/material.dart';
-import 'package:nathacksentry/colors/lightpurple_gradient.dart';
 import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 
-class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
-  //makes text optional
-  Text title;
-  final double barHeight = 30.0;
-  MainAppBar({Key? key, required this.title}) : super(key: key);
-  @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight + 70.0);
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return PreferredSize(
-        child: ClipPath(
-          clipper: WaveClip(),
-          child: Container(
-            decoration: BoxDecoration(gradient: FlutterGradients.perfectBlue()),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[title],
-            ),
-          ),
-        ),
-        preferredSize: Size.fromHeight(kToolbarHeight + 40));
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
   }
 }
 
-class WaveClip extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    Path path = new Path();
-    final lowPoint = size.height - 30;
-    final highPoint = size.height - 60;
-    path.lineTo(0, size.height);
-    path.quadraticBezierTo(size.width / 4, highPoint, size.width / 2, lowPoint);
-    path.quadraticBezierTo(
-        3 / 4 * size.width, size.height, size.width, lowPoint);
-    path.lineTo(size.width, 0);
-    return path;
-  }
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return false;
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: myAppBar(),
+    );
+  }
+
+  AppBar myAppBar() {
+    return AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 0.0,
+      toolbarHeight: 70,
+      title: Text("Custom App Bar"),
+      centerTitle: true,
+      flexibleSpace: Container(
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(20),
+                bottomRight: Radius.circular(20)),
+            gradient: FlutterGradients.perfectBlue()),
+      ),
+    );
   }
 }

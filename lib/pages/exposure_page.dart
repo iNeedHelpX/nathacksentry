@@ -13,26 +13,22 @@ class _ExposurePageState extends State<ExposurePage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: SafeArea(
-          child: Stack(
+      child: Stack(
         children: [
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              AboutApp(boomtitle: "hello", subtext: "thi"),
-              SizedBox(
-                height: 25,
-              ),
-              NeuromorphicBox(),
-              SizedBox(
-                height: 20,
-              ),
-            ],
+          SafeArea(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                AboutApp(
+                  boomtitle: "This is the exposure page",
+                  subtext: "Take your time, breath and go at you own pace",
+                )
+              ],
+            ),
           )
         ],
-      )),
+      ),
     );
   }
 }

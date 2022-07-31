@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:nathacksentry/bars/mainappbar_top.dart';
 import 'package:nathacksentry/bars/bottom_bar_items.dart';
+import 'package:nathacksentry/bars/roundappbar.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/pages/account_page.dart';
 import 'package:nathacksentry/pages/exposure_page.dart';
@@ -42,22 +41,19 @@ class _AppSetupState extends State<AppSetup> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          gradient: FlutterGradients.confidentCloud(
-              type: GradientType.linear, tileMode: TileMode.values[0])),
-      child: Scaffold(
-        appBar: MainAppBar(
-          title: Text(
-            "Fearless",
-            style: GoogleFonts.nothingYouCouldDo(
-                color: textturq2, fontSize: 45, fontWeight: FontWeight.w900),
-          ),
+        gradient: FlutterGradients.confidentCloud(
+          type: GradientType.linear,
+          tileMode: TileMode.values[0],
         ),
-        backgroundColor: Colors.transparent,
+      ),
+      child: Scaffold(
+        extendBodyBehindAppBar: true,
+        appBar: customBar(),
         body: pageViews(),
         extendBody: true,
         bottomNavigationBar: RollingBottomBar(
           color: barback2,
-          itemColor: bg2,
+          itemColor: gold,
           controller: _controller,
           useActiveColorByDefault: false,
           items: bottomBarItems,
@@ -65,7 +61,7 @@ class _AppSetupState extends State<AppSetup> {
           onTap: (index) {
             _controller.animateToPage(
               index,
-              duration: const Duration(milliseconds: 400),
+              duration: const Duration(milliseconds: 200),
               curve: Curves.easeOut,
             );
           },
@@ -76,4 +72,3 @@ class _AppSetupState extends State<AppSetup> {
 }
 
 //added!
-

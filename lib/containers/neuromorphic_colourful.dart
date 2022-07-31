@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 
-class NeuromorphicBox extends StatefulWidget {
+class NeuromorphicBoxDark extends StatefulWidget {
   final String boomtitle;
   final String subtext;
-  const NeuromorphicBox(
+  const NeuromorphicBoxDark(
       {Key? key, required this.boomtitle, required this.subtext})
       : super(key: key);
 
   @override
-  State<NeuromorphicBox> createState() => _NeuromorphicBoxState();
+  State<NeuromorphicBoxDark> createState() => _NeuromorphicBoxDarkState();
 }
 
-class _NeuromorphicBoxState extends State<NeuromorphicBox> {
+class _NeuromorphicBoxDarkState extends State<NeuromorphicBoxDark> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -25,32 +26,25 @@ class _NeuromorphicBoxState extends State<NeuromorphicBox> {
           child: Container(
             //sets size of box
             width: size.width,
-            height: size.height / 4,
+
             padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
             child: Column(children: [
               _title(),
               _subtext(),
             ]),
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 239, 230, 235),
+              color: Color.fromARGB(255, 145, 125, 238),
               borderRadius: BorderRadius.circular(31),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.fromARGB(255, 197, 182, 185),
-                  Color.fromARGB(255, 239, 230, 235)
-                ],
-              ),
+              gradient: FlutterGradients.nightSky(),
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(255, 242, 227, 234),
+                  color: Color.fromARGB(255, 223, 217, 246),
                   offset: Offset(-12.0, -12.0),
                   blurRadius: 35,
                   spreadRadius: 0.0,
                 ),
                 BoxShadow(
-                  color: Color.fromARGB(255, 197, 182, 185),
+                  color: Color.fromARGB(255, 40, 34, 63),
                   offset: Offset(12.0, 12.0),
                   blurRadius: 34,
                   spreadRadius: 0.0,
@@ -74,8 +68,8 @@ class _NeuromorphicBoxState extends State<NeuromorphicBox> {
             TextSpan(
               text: widget.subtext,
               style: GoogleFonts.cherryCreamSoda(
-                color: textgreyblue,
-                fontSize: 14,
+                color: lightblue,
+                fontSize: 16,
               ),
             ),
           ],
@@ -90,9 +84,10 @@ class _NeuromorphicBoxState extends State<NeuromorphicBox> {
       alignment: Alignment.topCenter,
       child: Text(
         widget.boomtitle,
-        style: GoogleFonts.lemon(
-          fontSize: 24,
-          color: fill2,
+        style: GoogleFonts.nothingYouCouldDo(
+          fontSize: 40,
+          fontWeight: FontWeight.w800,
+          color: textturq2,
         ),
         textAlign: TextAlign.center,
       ),
