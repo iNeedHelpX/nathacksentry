@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:nathacksentry/bars/appbar_top.dart';
 import 'package:nathacksentry/bars/bottom_bar_items.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/pages/account_page.dart';
 import 'package:nathacksentry/pages/exposure_page.dart';
 import 'package:nathacksentry/pages/home_page.dart';
 import 'package:rolling_bottom_bar/rolling_bottom_bar.dart';
-import 'package:rolling_bottom_bar/rolling_bottom_bar_item.dart';
 
 //sets the features of the app with color, bar etc
-
 class AppSetup extends StatefulWidget {
   AppSetup({Key? key}) : super(key: key);
 
@@ -39,14 +38,14 @@ class _AppSetupState extends State<AppSetup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Rolling Bottom Bar'),
-      ),
+      appBar: myRadialBar(context),
+      backgroundColor: bg,
       body: pageViews(),
       extendBody: true,
       bottomNavigationBar: RollingBottomBar(
+        color: lightgreen,
+        itemColor: Colors.black,
         controller: _controller,
-        flat: true,
         useActiveColorByDefault: false,
         items: bottomBarItems,
         enableIconRotation: true,
