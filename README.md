@@ -39,4 +39,7 @@ If I were to grow this app I would ideally curate data from users and have a mor
 
 ## Screenshots from the app
 
-<p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182052054-a8f13e49-1f3b-4e49-a543-5d4c7fa4a19b.png" width="350">  <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182052150-90a2219c-736b-4221-8ffe-91a63c5f14dc.png" width="350"></p>
+<p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076250-c1723c77-865b-4566-a8de-805b2e6b42eb.png" width="350">  <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076299-b83f647a-db53-4341-82b8-4c92e8a4a239.png" width="350"></p>
+
+
+
