@@ -40,6 +40,3 @@ If I were to grow this app I would ideally curate data from users and have a mor
 ## Screenshots from the app
 
 <p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076250-c1723c77-865b-4566-a8de-805b2e6b42eb.png" width="350">  <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076299-b83f647a-db53-4341-82b8-4c92e8a4a239.png" width="350"></p>
-
-
-
