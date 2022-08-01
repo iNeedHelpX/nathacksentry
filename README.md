@@ -15,15 +15,28 @@ to align the header title to the center
 
 <li> <b>Flutter/dart</b> For mobile app front end<br></li>
 <li> <b>Firebase</b> For database and auth (at a later point).<br></li>
-<li> <b>ETH</b> For crypto alt payments<br></li>
-<li> <b>Solidity and truffle</b> For Testing/playing with smart contracts<br></li>
+
 <br>
     </div>
 
 <p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/176866330-764ec99a-8803-43cd-8181-b24b18143dc9.png" height="500"><br><sup><em>Organization of the file structure(essentially MVVM)...Plus I use VSCode!</sup></em></p>
 
-You must have the flutter sdk installed. This app runs firebase for both login and datastorage. An apk is provided on my hackathon submission for this purpose so you can validate that this app works. It is also suggested that you know how to work with solidity smart contracts and run on the ethereum textnet, but that is not wholly required as that's a slim portion of the app, really only geared towards less then 5% of customers and it's just me trying to learn new things.
+You must have the flutter sdk installed. This app runs firebase for datastorage. Login will be added at a later date as well as payments and even alternative payments in crypto. I can write solidity smart contracts anf know how to use the blockchain.
 
-# Screenshots from the app
+# A bit about the problem and my personal understanding and interest in the matter
+
+Exposure therapy is a technique used by therapists to help people overcome fears and anxieties by breaking the pattern of fear and avoidance. This format of therapy can be really controversial due to its confrontational approach and the fact that it can trigger servere anxiety. It's important to stress that the recipient must be a willing participant and adaquate trigger warnings are given and things are staged correctly.
+
+Admittedly I'm not the biggest fan of addressing psychiatric issues solely using an app,to me that's just as cringe as depending on TV psychologists to solve your issue. Yes the TV psychologists are real DRs(and often are generally interesting people), however getting 1- on -1 care is of the utmost importance when it comes to these issues.
+
+However, I do think these apps CAN be used as tools in addition to counse1ling and medication. Most importantly it sometimes helps to be able to take "baby steps" on your own terms. Some people might see a therapist or dr on a regular basis but appointments are only so long. Also many people have anxiety and need to be able to work on their psychiatric issues on their own time. I think things like TV psychologists, books, tv shows and apps have their own important roles to play in helping people navigate mental health issues. while these things cannot replace seeing a Dr, they can aid in a theraputic plan or encourage seeking help in the first place.
+
+## How I ranked the photos
+
+I found 10 photos of rats and 10 of spiders and tried to rank them as objectively as I could for intensity of fear. With the rats you'll notice that 1-5 are pics of pet rats that are extremely friendly looking. 9-10 are the stuff of nightmares! I applied the same approach to the spiders in rank ordering them.
+
+If I were to grow this app I would ideally curate data from users and have a more dynamic approach to rankings.
+
+## Screenshots from the app
 
 <p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182052054-a8f13e49-1f3b-4e49-a543-5d4c7fa4a19b.png" width="350">  <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182052150-90a2219c-736b-4221-8ffe-91a63c5f14dc.png" width="350"></p>

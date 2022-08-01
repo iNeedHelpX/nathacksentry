@@ -7,8 +7,8 @@ List<RollingBottomBarItem> get bottomBarItems {
     RollingBottomBarItem(MdiIcons.naturePeople,
         label: 'About', activeColor: Colors.black),
     RollingBottomBarItem(MdiIcons.spiderThread,
-        label: 'Exposure', activeColor: Colors.black),
-    RollingBottomBarItem(Icons.person,
-        label: 'account', activeColor: Colors.black),
+        label: 'Spiders', activeColor: Colors.black),
+    RollingBottomBarItem(MdiIcons.rodent,
+        label: 'Rats', activeColor: Colors.black),
   ];
 }

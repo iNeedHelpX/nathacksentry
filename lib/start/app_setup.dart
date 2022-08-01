@@ -3,8 +3,8 @@ import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:nathacksentry/bars/bottom_bar_items.dart';
 import 'package:nathacksentry/bars/roundappbar.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
-import 'package:nathacksentry/pages/account_page.dart';
-import 'package:nathacksentry/pages/exposure_page.dart';
+import 'package:nathacksentry/pages/rat_page.dart';
+import 'package:nathacksentry/pages/spider_page.dart';
 import 'package:nathacksentry/pages/home_page.dart';
 import 'package:rolling_bottom_bar/rolling_bottom_bar.dart';
 
