@@ -85,9 +85,9 @@ class _NeuromorphicWarningState extends State<NeuromorphicWarning> {
       child: Text(
         widget.boomtitle,
         style: GoogleFonts.gochiHand(
-          fontSize: 40,
+          fontSize: 35,
           fontWeight: FontWeight.w500,
-          color: bg2,
+          color: textblue2,
         ),
         textAlign: TextAlign.center,
       ),
