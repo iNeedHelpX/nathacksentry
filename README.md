@@ -14,14 +14,25 @@ to align the header title to the center
 <div align="center"><h3 align="center">Technologies used in this app</h3>
 
 <li> <b>Flutter/dart</b> For mobile app front end<br></li>
-<li> <b>Firebase</b> For database and auth (at a later point).<br></li>
-
+<li> <b>Firebase</b> For database (and auth at a later point).<br></li>
+<li> <b>Solidity/web3</b> You'll see the contracts folder and .sol file, however I decided against pursuing that as there are real time constraints. <br></li>
 <br>
     </div>
 
 <p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/176866330-764ec99a-8803-43cd-8181-b24b18143dc9.png" height="500"><br><sup><em>Organization of the file structure(essentially MVVM)...Plus I use VSCode!</sup></em></p>
 
-You must have the flutter sdk installed. This app runs firebase for datastorage. Login will be added at a later date as well as payments and even alternative payments in crypto. I can write solidity smart contracts anf know how to use the blockchain.
+You must have the flutter sdk installed if you are testing this from source.Flutter allows you to write code once and deploy to multiple devices, it is hardware Agnostic. More about flutter here: <https://flutter.dev/>
+
+ I will sends you an apk file if needed. This app runs firebase for datastorage. Login will be added at a later date as well as payments and even alternative payments in crypto. I can write solidity smart contracts and know how to use the blockchain.
+
+## As for my personal setup
+
+- I run on a mac M1, iPhone XS Max and xcode simulator.
+
+- VSCode is my IDE of choice. I avoid Android Studio and XCode at all costs.
+
+- I don't own an android and have not tested my project on Android simulator. However this project is Android compatible. I have set it up to work on a Android with my signing keys just in case. If needed I will send an APK file over!
+
 
 # A bit about the problem and my personal understanding and interest in the matter
 
