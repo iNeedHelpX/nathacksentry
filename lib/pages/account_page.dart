@@ -13,14 +13,16 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Stack(children: [
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ComingSoon(
-                text: "This will be the account page",
-                subtext: "Will be added later")
-          ],
+        SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ComingSoon(
+                  text: "This will be the account page",
+                  subtext: "Will be added later")
+            ],
+          ),
         )
       ]),
     );

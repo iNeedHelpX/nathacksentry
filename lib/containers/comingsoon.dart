@@ -15,7 +15,7 @@ class ComingSoon extends StatelessWidget {
       height: 80,
       width: 400,
       decoration: BoxDecoration(
-        gradient: FlutterGradients.crystalRiver(),
+        gradient: FlutterGradients.politeRumors(),
         borderRadius: BorderRadius.circular(15),
       ),
       child: Column(
@@ -23,12 +23,17 @@ class ComingSoon extends StatelessWidget {
           Text(
             text,
             style: TextStyle(
-              color: text2,
-              fontSize: 20,
+              color: textturq3,
+              fontSize: 22,
               fontWeight: FontWeight.w900,
             ),
           ),
           SizedBox(height: 10),
+          Text(
+            subtext,
+            style: TextStyle(
+                color: lightblue, fontSize: 14, fontWeight: FontWeight.w700),
+          ),
           //email address added here!
         ],
       ),
