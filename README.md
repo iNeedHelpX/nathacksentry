@@ -33,6 +33,8 @@ Admittedly I'm not the biggest fan of addressing psychiatric issues solely using
 
 However, I do think these apps CAN be used as tools in addition to counselling and medication. Most importantly it sometimes helps to be able to take "baby steps" on your own terms. Some people might see a therapist or dr on a regular basis but appointments are only so long. Also many people have anxiety and need to be able to work on their psychiatric issues on their own time. I think things like TV psychologists, books, tv shows and apps have their own important roles to play in helping people navigate mental health issues. while these things cannot replace seeing a Dr, they can aid in a theraputic plan or encourage seeking help in the first place.
 
+I am personally aware of these issues as I have multiple psychiatric disorders myself and take medications. I've also attempted exposure therapy on myself and it didn't go too well. Plus I majored in Psychology and minored in comp sci at Trent University!
+
 ## How I ranked the photos
 
 I found 10 photos of rats and 10 of spiders and tried to rank them as objectively as I could for intensity of fear. With the rats you'll notice that 1-5 are pics of pet rats that are extremely friendly looking. 9-10 are the stuff of nightmares! I applied the same approach to the spiders in rank ordering them.
