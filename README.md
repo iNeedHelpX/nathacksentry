@@ -29,7 +29,7 @@ Exposure therapy is a technique used by therapists to help people overcome fears
 
 Admittedly I'm not the biggest fan of addressing psychiatric issues solely using an app,to me that's just as cringe as depending on TV psychologists to solve your issue. Yes the TV psychologists are real DRs(and often are generally interesting people), however getting 1- on -1 care is of the utmost importance when it comes to these issues.
 
-However, I do think these apps CAN be used as tools in addition to counse1ling and medication. Most importantly it sometimes helps to be able to take "baby steps" on your own terms. Some people might see a therapist or dr on a regular basis but appointments are only so long. Also many people have anxiety and need to be able to work on their psychiatric issues on their own time. I think things like TV psychologists, books, tv shows and apps have their own important roles to play in helping people navigate mental health issues. while these things cannot replace seeing a Dr, they can aid in a theraputic plan or encourage seeking help in the first place.
+However, I do think these apps CAN be used as tools in addition to counselling and medication. Most importantly it sometimes helps to be able to take "baby steps" on your own terms. Some people might see a therapist or dr on a regular basis but appointments are only so long. Also many people have anxiety and need to be able to work on their psychiatric issues on their own time. I think things like TV psychologists, books, tv shows and apps have their own important roles to play in helping people navigate mental health issues. while these things cannot replace seeing a Dr, they can aid in a theraputic plan or encourage seeking help in the first place.
 
 ## How I ranked the photos
 
