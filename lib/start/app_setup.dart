@@ -52,8 +52,8 @@ class _AppSetupState extends State<AppSetup> {
         body: pageViews(),
         extendBody: true,
         bottomNavigationBar: RollingBottomBar(
-          color: barback2,
-          itemColor: gold,
+          color: barback1,
+          itemColor: textturq2,
           controller: _controller,
           useActiveColorByDefault: false,
           items: bottomBarItems,

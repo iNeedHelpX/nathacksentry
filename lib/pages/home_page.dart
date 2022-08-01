@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nathacksentry/containers/neuromorphic_colourful.dart';
-import 'package:nathacksentry/containers/neuromorphicbox.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

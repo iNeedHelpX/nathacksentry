@@ -25,8 +25,8 @@ class _NeuromorphicBoxState extends State<NeuromorphicBox> {
           child: Container(
             //sets size of box
             width: size.width,
-            height: size.height / 4,
-            padding: EdgeInsets.fromLTRB(10, 20, 10, 10),
+
+            padding: EdgeInsets.fromLTRB(10, 15, 10, 20),
             child: Column(children: [
               _title(),
               _subtext(),
@@ -73,9 +73,9 @@ class _NeuromorphicBoxState extends State<NeuromorphicBox> {
           children: [
             TextSpan(
               text: widget.subtext,
-              style: GoogleFonts.cherryCreamSoda(
-                color: textgreyblue,
-                fontSize: 14,
+              style: GoogleFonts.sniglet(
+                color: bg,
+                fontSize: 16,
               ),
             ),
           ],
@@ -91,9 +91,7 @@ class _NeuromorphicBoxState extends State<NeuromorphicBox> {
       child: Text(
         widget.boomtitle,
         style: GoogleFonts.lemon(
-          fontSize: 24,
-          color: fill2,
-        ),
+            fontSize: 22, fontWeight: FontWeight.w500, color: barback3),
         textAlign: TextAlign.center,
       ),
     );

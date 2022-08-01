@@ -36,7 +36,7 @@ AppBar customBar() {
                   "Fearless",
                   style: GoogleFonts.nothingYouCouldDo(
                       color: textturq2,
-                      fontSize: 45,
+                      fontSize: 65,
                       fontWeight: FontWeight.w900),
                 ),
               ],

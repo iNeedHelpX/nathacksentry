@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nathacksentry/containers/infobox.dart';
 import 'package:nathacksentry/containers/neuromorphicbox.dart';
 
 class ExposurePage extends StatefulWidget {
@@ -20,10 +19,11 @@ class _ExposurePageState extends State<ExposurePage> {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                AboutApp(
+                NeuromorphicBox(
                   boomtitle: "This is the exposure page",
-                  subtext: "Take your time, breath and go at you own pace",
-                )
+                  subtext:
+                      "Take your time, breath and go at you own pace. photos are ranked from least scary (1) to scariest(10)",
+                ),
               ],
             ),
           )
