@@ -25,7 +25,9 @@ You must have the flutter sdk installed. This app runs firebase for datastorage.
 
 # A bit about the problem and my personal understanding and interest in the matter
 
-Exposure therapy is a technique used by therapists to help people overcome fears and anxieties by breaking the pattern of fear and avoidance. This format of therapy can be really controversial due to its confrontational approach and the fact that it can trigger servere anxiety. It's important to stress that the recipient must be a willing participant and adaquate trigger warnings are given and things are staged correctly.
+Exposure therapy is a technique used by therapists to help people overcome fears and anxieties by breaking the pattern of fear and avoidance. This format of therapy can be controversial due to its confrontational approach and the fact that it can trigger servere anxiety. It's important to stress that the recipient must be a willing participant and adaquate trigger warnings are given and things are staged correctly.
+
+Over a quarter of the people in Canada will have an anxiety disorder or depression within their lifetime.Exposure-based behavioral therapies are effective treatments for these disorders.However only a small percentage of patients are treated with exposure therapy.
 
 Admittedly I'm not the biggest fan of addressing psychiatric issues solely using an app,to me that's just as cringe as depending on TV psychologists to solve your issue. Yes the TV psychologists are real DRs(and often are generally interesting people), however getting 1- on -1 care is of the utmost importance when it comes to these issues.
 
