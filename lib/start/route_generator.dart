@@ -15,7 +15,7 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Home());
       case '/details':
         // Validation of correct data type. I can add different data types here
-        if (args is String) {
+        if (args is String && args is int) {
           return MaterialPageRoute(
             builder: (_) => DetailsPage(
                 // data: args,
