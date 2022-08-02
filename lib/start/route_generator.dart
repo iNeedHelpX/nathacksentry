@@ -18,7 +18,7 @@ class RouteGenerator {
         if (args is String && args is int) {
           return MaterialPageRoute(
             builder: (_) => DetailsPage(
-              imgUrl: '', name: '',
+              imgUrl: args, name: args,
               // data: args,
             ),
           );
