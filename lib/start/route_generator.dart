@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/pages/details.dart';
 import 'package:nathacksentry/pages/home_page.dart';
@@ -38,9 +39,10 @@ class RouteGenerator {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Center(
-              child: Text('This is the error page'),
-            ),
+            Lottie.network(
+                'https://assets4.lottiefiles.com/packages/lf20_sii02z44.json'),
+            SizedBox(height: 30),
+            Text('This is the error page'),
           ],
         ),
       );
