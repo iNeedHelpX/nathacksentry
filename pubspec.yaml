@@ -49,6 +49,7 @@ dependencies:
   flutter_gradients_reborn: ^1.0.0+7
   flutter_neumorphic: ^3.2.0
   material_design_icons_flutter: ^5.0.6996
+  lottie: ^1.4.0
 
 dev_dependencies:
   flutter_test:

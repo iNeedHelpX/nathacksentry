@@ -34,8 +34,14 @@ class RouteGenerator {
     return MaterialPageRoute(builder: (_) {
       return Scaffold(
         backgroundColor: containerback,
-        body: Center(
-          child: Text('This is the error page'),
+        body: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Text('This is the error page'),
+            ),
+          ],
         ),
       );
     });
