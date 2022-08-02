@@ -23,7 +23,7 @@ class RouteGenerator {
           );
         }
         // If args is not of the correct type, return an error page.
-        // You can also throw an exception while in development.
+        // I can also throw an exception while in development.
         return _errorRoute();
       default:
         // If there is no such named route in the switch statement, e.g. /third
