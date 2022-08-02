@@ -29,7 +29,7 @@ You must have the flutter sdk installed if you are testing this from source.Flut
 
 - I run on a mac M1, iPhone XS Max and xcode simulator.
 
-- VSCode is my IDE of choice. I avoid Android Studio and XCode at all costs.
+- VSCode is my IDE of choice.
 
 - I don't own an android and have not tested my project on Android simulator. However this project is Android compatible. I have set it up to work on Android with my signing keys just in case. If needed I will send an APK file over!
 
