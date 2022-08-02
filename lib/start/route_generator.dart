@@ -7,7 +7,7 @@ import 'package:nathacksentry/pages/home_page.dart';
 // Specify a function returning a route. By doing this, I still get the benefits of using named routes, but I now have the option to pass data to pages. This is possible, because unlike with a map literal, you can add logic to a function.
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
-    // Getting arguments passed in while calling Navigator.pushNamed. this allows me to get the arguments as dynamic data
+    // Getting arguments passed in while calling Navigator.pushNamed. this allows me to get the arguments as dynamic data. Esssentially pass in the arguments
     final args = settings.arguments;
 
     switch (settings.name) {
@@ -18,8 +18,9 @@ class RouteGenerator {
         if (args is String && args is int) {
           return MaterialPageRoute(
             builder: (_) => DetailsPage(
-                // data: args,
-                ),
+              imgUrl: '', name: '',
+              // data: args,
+            ),
           );
         }
         // If args is not of the correct type, return an error page.
