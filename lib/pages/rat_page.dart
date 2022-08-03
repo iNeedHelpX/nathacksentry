@@ -23,7 +23,11 @@ class _AccountPageState extends State<AccountPage> {
               NeuromorphicWarning(
                   boomtitle: "This is the Rat section",
                   subtext:
-                      "Photos are rank ordered according to insensity and likelyhood of inducing fearful responses. Work at you own pace and start with low numbered photos first. High numbered photos are the most frightening")
+                      "Photos are rank ordered according to insensity and likelyhood of inducing fearful responses. Work at you own pace and start with low numbered photos first. High numbered photos are the most frightening"),
+              SizedBox(
+                height: 20,
+              ),
+              //call the rats catalog
             ],
           ),
         )
