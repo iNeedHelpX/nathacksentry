@@ -1,20 +1,19 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RatModel {
-  static const PIC = "pic";
-  static const RANK = "rank";
+  final String pic;
+  final double rank;
 
-  late int? rank;
-  late String? pic;
-
-  RatModel({
-    this.rank,
-    this.pic,
+  const RatModel({
+    required this.pic,
+    required this.rank,
   });
 
-  RatModel.fromSnapshot(DocumentSnapshot snapshot) {
-    pic = snapshot[PIC];
-
-    rank = snapshot[RANK];
+  static RatModel fromSnapshot(DocumentSnapshot snapshot) {
+    RatModel product = RatModel(
+      pic: snapshot['pic'],
+      rank: snapshot['rank'],
+    );
+    return product;
   }
 }

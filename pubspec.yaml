@@ -51,6 +51,7 @@ dependencies:
   material_design_icons_flutter: ^5.0.6996
   lottie: ^1.4.0
   provider: ^6.0.3
+  auth: ^8.1.0
 
 dev_dependencies:
   flutter_test:
