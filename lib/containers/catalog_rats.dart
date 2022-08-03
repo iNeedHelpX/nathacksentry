@@ -5,7 +5,7 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:nathacksentry/controller/ratcontroller.dart';
 
 class RatsCatalog extends StatefulWidget {
-  final productConroller = Get.put(RatController());
+  final ratsController = Get.put(RatController());
   RatsCatalog({Key? key}) : super(key: key);
 
   @override
@@ -17,6 +17,15 @@ class _RatsCatalogState extends State<RatsCatalog> {
       FirebaseFirestore.instance.collection('rats').snapshots();
   @override
   Widget build(BuildContext context) {
-    return Obx(() => Flexible(child: ListView.builder()));
+    return Obx(
+      () => Flexible(
+        child: ListView.builder(
+          itemCount: ratsController.products.length,
+          itemBuilder: (BuildContext context, int index) {
+            //
+          },
+        ),
+      ),
+    );
   }
 }
