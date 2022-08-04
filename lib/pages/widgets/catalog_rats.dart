@@ -22,7 +22,7 @@ class _RatsCatalogState extends State<RatsCatalog> {
         child: ListView.builder(
           itemCount: ratsController.products.length,
           itemBuilder: (BuildContext context, int index) {
-            //
+            //call the card object
           },
         ),
       ),
