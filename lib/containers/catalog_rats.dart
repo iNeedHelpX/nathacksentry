@@ -17,6 +17,7 @@ class _RatsCatalogState extends State<RatsCatalog> {
       FirebaseFirestore.instance.collection('rats').snapshots();
   @override
   Widget build(BuildContext context) {
+    //this does the list of cards
     return Obx(
       () => Flexible(
         child: ListView.builder(
