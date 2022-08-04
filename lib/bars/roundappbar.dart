@@ -22,7 +22,7 @@ AppBar customBar() {
       ),
     ),
     bottom: PreferredSize(
-      preferredSize: Size.fromHeight(100),
+      preferredSize: Size.fromHeight(200),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
