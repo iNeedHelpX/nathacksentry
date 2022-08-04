@@ -1,11 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:nathacksentry/controller/ratcontroller.dart';
 
 class RatsCatalog extends StatefulWidget {
-  final ratsController = Get.put(RatController());
   RatsCatalog({Key? key}) : super(key: key);
 
   @override
@@ -13,6 +11,7 @@ class RatsCatalog extends StatefulWidget {
 }
 
 class _RatsCatalogState extends State<RatsCatalog> {
+  final ratsController = Get.put(RatController());
   final Stream<QuerySnapshot> rats =
       FirebaseFirestore.instance.collection('rats').snapshots();
   @override
