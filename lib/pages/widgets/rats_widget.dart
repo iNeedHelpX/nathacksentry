@@ -16,14 +16,17 @@ class RatsWidget extends StatelessWidget {
       () => GridView.count(
         shrinkWrap: true,
         scrollDirection: Axis.vertical,
+        physics: NeverScrollableScrollPhysics(),
         crossAxisCount: 2,
         childAspectRatio: 1,
         //around the boxes
         padding: const EdgeInsets.all(10),
         mainAxisSpacing: 4.0,
         crossAxisSpacing: 10,
-        children: ratController.rats.map((RatsModel rat) {
-          return SingleRat(rat: rat);
+        children: ratController.rats.map((RatsModel? rat) {
+          return SingleRat(
+            rat: rat,
+          );
         }).toList(),
       ),
     );
@@ -64,9 +67,9 @@ class RatsCard extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(1, 25, 1, 0),
       child: GestureDetector(
         onTap: () {
-          Get.to(() => DetailsPage(
+          Get.to(() => RatsDetail(
                 imgUrl: ratsControl.rats[index].pic,
-                index: ratsControl.rats[index].rank.toString(),
+                rank: ratsControl.rats[index].rank,
               ));
         },
         child: Container(

@@ -13,10 +13,7 @@ class RatsControl extends GetxController {
     rats.bindStream(getAllRats());
   }
 
-  Stream<List<RatsModel>> getAllRats() => firebaseFirestore
-      .collection(collection)
-      .orderBy("rank")
-      .snapshots()
-      .map((query) =>
+  Stream<List<RatsModel>> getAllRats() =>
+      firebaseFirestore.collection(collection).snapshots().map((query) =>
           query.docs.map((item) => RatsModel.fromMap(item.data())).toList());
 }

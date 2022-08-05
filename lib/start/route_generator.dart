@@ -21,9 +21,9 @@ class RouteGenerator {
         // Validation of correct data type. I can add different data types here
         if (args is String) {
           return MaterialPageRoute(
-              builder: (_) => DetailsPage(
+              builder: (_) => RatsDetail(
                     imgUrl: args,
-                    index: args,
+                    rank: args as int,
                   ));
         }
         // If args is not of the correct type, return an error page.
