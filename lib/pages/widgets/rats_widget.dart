@@ -31,7 +31,7 @@ class RatsWidget extends StatelessWidget {
 
 //catlog rats widget
 class CatalogRats extends StatelessWidget {
-  final ratControl = Get.put(RatsControl());
+  // final ratControl = Get.put(RatsControl());
 
   CatalogRats({Key? key}) : super(key: key);
 

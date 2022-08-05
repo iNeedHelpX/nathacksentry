@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
+import 'package:nathacksentry/controller/second_spiders.dart';
 import 'package:nathacksentry/globalvars.dart';
 import 'package:nathacksentry/model/spiders_model.dart';
 
@@ -76,5 +77,45 @@ class SingleSpider extends StatelessWidget {
       //   ],
       // ),
     );
+  }
+}
+
+class CatalogSpider extends StatelessWidget {
+  CatalogSpider({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Obx(
+      () => Flexible(
+        child: ListView.builder(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: spiderController.spiders.length,
+            itemBuilder: (BuildContext context, int index) {
+              return NewButton(
+                index: index,
+              );
+            }),
+      ),
+    );
+  }
+}
+
+class NewButton extends StatelessWidget {
+  final SpidersController spidersControl = Get.find();
+  final int index;
+  NewButton({Key? key, required this.index}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.black),
+        ),
+        onPressed: () {},
+        child: Text("${spiderController.spiders[index].rank}"));
   }
 }
