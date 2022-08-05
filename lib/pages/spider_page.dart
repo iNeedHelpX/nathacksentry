@@ -21,6 +21,7 @@ class _ExposurePageState extends State<ExposurePage> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 NeuromorphicWarning(
                   boomtitle: "This is the Spider section",

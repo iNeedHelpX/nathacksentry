@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:nathacksentry/colors/colours_list.dart';
+import 'package:nathacksentry/controller/second_ratcontroller.dart';
+import 'package:nathacksentry/globalvars.dart';
 
 class DetailsPage extends StatelessWidget {
   // final String imgUrl;
+  final RatsControl ratsControl = Get.find();
   final String name;
+  final String index;
   final String imgUrl;
-  const DetailsPage({required this.imgUrl, required this.name});
+  DetailsPage(
+      {Key? key, required this.name, required this.imgUrl, required this.index})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +34,11 @@ class DetailsPage extends StatelessWidget {
                           child: Image(
                               image: NetworkImage(imgUrl), fit: BoxFit.cover),
                         ),
+                        SizedBox(height: 20),
+                        Container(
+                          color: orangetext,
+                          child: Text(index),
+                        )
                       ],
                     ),
                   ),

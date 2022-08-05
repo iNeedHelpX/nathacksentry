@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nathacksentry/start/app_setup.dart';
+import 'package:nathacksentry/start/route_generator.dart';
 
 //the start of the app.
 class Start extends StatefulWidget {
@@ -23,7 +24,7 @@ class _StartState extends State<Start> {
         //replace this with a call to a switch statement to check for login state
         child: AppSetup(),
       ),
-
+      onGenerateRoute: RouteGenerator.generateRoute,
       //genrates the routes for the app
       // onGenerateRoute: RouteGenerator.generateRoute,
     );

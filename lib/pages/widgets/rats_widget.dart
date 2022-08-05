@@ -61,29 +61,37 @@ class RatsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(1, 25, 1, 0),
-      child: Container(
-        padding: EdgeInsets.only(left: 10, right: 0),
-        decoration: BoxDecoration(
-            gradient: yellowPinkGrad(),
-            borderRadius: BorderRadius.circular(15)),
-        child: Padding(
-          padding: const EdgeInsets.all(5.0),
-          child: Row(children: [
-            CircleAvatar(
-              radius: 70,
-              backgroundImage: NetworkImage(ratsControl.rats[index].pic),
-            ),
-            SizedBox(
-              width: 22,
-            ),
-            Text(
-              "${ratsControl.rats[index].rank}",
-              style: GoogleFonts.schoolbell(fontSize: 28),
-            ),
-            SizedBox(
-              width: 10,
-            ),
-          ]),
+      child: GestureDetector(
+        onTap: () {
+          Get.toNamed(
+            "/details",
+            arguments: ratsControl.rats[index].pic,
+          );
+        },
+        child: Container(
+          padding: EdgeInsets.only(left: 10, right: 0),
+          decoration: BoxDecoration(
+              gradient: yellowPinkGrad(),
+              borderRadius: BorderRadius.circular(15)),
+          child: Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Row(children: [
+              CircleAvatar(
+                radius: 70,
+                backgroundImage: NetworkImage(ratsControl.rats[index].pic),
+              ),
+              SizedBox(
+                width: 22,
+              ),
+              Text(
+                "${ratsControl.rats[index].rank}",
+                style: GoogleFonts.schoolbell(fontSize: 28),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+            ]),
+          ),
         ),
       ),
     );

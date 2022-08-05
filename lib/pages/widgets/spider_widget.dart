@@ -88,18 +88,16 @@ class CatalogSpider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Obx(
-      () => Flexible(
-        child: ListView.builder(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: spiderController.spiders.length,
-            itemBuilder: (BuildContext context, int index) {
-              return NewButton(
-                index: index,
-              );
-            }),
-      ),
+      () => ListView.builder(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          itemCount: spiderController.spiders.length,
+          itemBuilder: (BuildContext context, int index) {
+            return NewButton(
+              index: index,
+            );
+          }),
     );
   }
 }
@@ -112,8 +110,13 @@ class NewButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-        style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.black),
+        style: ElevatedButton.styleFrom(
+          primary: bg, //background color of button
+          //border width and color
+          elevation: 3, //elevation of button
+          shape: RoundedRectangleBorder(
+              //to set border radius to button
+              borderRadius: BorderRadius.circular(30)),
         ),
         onPressed: () {},
         child: Text("${spiderController.spiders[index].rank}"));

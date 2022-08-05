@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
@@ -17,13 +19,13 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Home());
       case '/details':
         // Validation of correct data type. I can add different data types here
-        if (args is String && args is RatsControl) {
+        if (args is String) {
           return MaterialPageRoute(
-            builder: (_) => DetailsPage(
-              imgUrl: args, name: args,
-              // data: args,
-            ),
-          );
+              builder: (_) => DetailsPage(
+                    name: args,
+                    imgUrl: args,
+                    index: args,
+                  ));
         }
         // If args is not of the correct type, return an error page.
         // I can also throw an exception while in development.
