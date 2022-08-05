@@ -15,15 +15,13 @@ class CatalogRats extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       () => Flexible(
-        //wrap list in sized box to avoid errors
-        child: SizedBox(
-          height: 100,
-          child: ListView.builder(
-              itemCount: ratController.products.length,
-              itemBuilder: (BuildContext context, int index) {
-                return RatsCard(index: index);
-              }),
-        ),
+        child: ListView.builder(
+            shrinkWrap: true,
+            scrollDirection: Axis.vertical,
+            itemCount: ratController.products.length,
+            itemBuilder: (BuildContext context, int index) {
+              return RatsCard(index: index);
+            }),
       ),
     );
   }

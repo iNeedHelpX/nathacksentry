@@ -6,7 +6,7 @@ class RatController extends GetxController {
   final products = <RatModel>[].obs;
   @override
   void onInit() {
-    products.bindStream(FirestoreDB().getAllProducts());
+    products.bindStream(FirestoreDBRats().getAllProducts());
     super.onInit();
   }
 }

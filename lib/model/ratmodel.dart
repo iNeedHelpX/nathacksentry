@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RatModel {
   final String pic;
-  final double rank;
+  final int rank;
 
   const RatModel({
     required this.pic,

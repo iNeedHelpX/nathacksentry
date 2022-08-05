@@ -20,6 +20,7 @@ class _AccountPageState extends State<AccountPage> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               NeuromorphicWarning(
                   boomtitle: "This is the Rat section",
