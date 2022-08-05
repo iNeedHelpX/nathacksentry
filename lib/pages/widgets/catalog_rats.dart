@@ -1,30 +1,66 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:nathacksentry/colors/colours_list.dart';
+import 'package:nathacksentry/colors/yellowpink_grad.dart';
 import 'package:nathacksentry/controller/ratcontroller.dart';
 
-// the catalog of rats
-class RatsCatalog extends StatefulWidget {
-  RatsCatalog({Key? key}) : super(key: key);
+class CatalogRats extends StatelessWidget {
+  final ratController = Get.put(RatController());
 
-  @override
-  State<RatsCatalog> createState() => _RatsCatalogState();
-}
+  CatalogRats({Key? key}) : super(key: key);
 
-class _RatsCatalogState extends State<RatsCatalog> {
-  final ratsController = Get.put(RatController());
-  final Stream<QuerySnapshot> rats =
-      FirebaseFirestore.instance.collection('rats').snapshots();
   @override
   Widget build(BuildContext context) {
-    //this does the list of cards
     return Obx(
       () => Flexible(
-        child: ListView.builder(
-          itemCount: ratsController.products.length,
-          itemBuilder: (BuildContext context, int index) {
-            //call the card object
-          },
+        //wrap list in sized box to avoid errors
+        child: SizedBox(
+          height: 100,
+          child: ListView.builder(
+              itemCount: ratController.products.length,
+              itemBuilder: (BuildContext context, int index) {
+                return RatsCard(index: index);
+              }),
+        ),
+      ),
+    );
+  }
+}
+
+class RatsCard extends StatelessWidget {
+  final RatController ratController = Get.find();
+  final int index;
+  RatsCard({Key? key, required this.index}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(1, 25, 1, 0),
+      child: Container(
+        padding: EdgeInsets.only(left: 10, right: 0),
+        decoration: BoxDecoration(
+            gradient: yellowPinkGrad(),
+            borderRadius: BorderRadius.circular(15)),
+        child: Padding(
+          padding: const EdgeInsets.all(5.0),
+          child: Row(children: [
+            CircleAvatar(
+              radius: 70,
+              backgroundImage: NetworkImage(ratController.products[index].pic),
+            ),
+            SizedBox(
+              width: 22,
+            ),
+            Text(
+              "${ratController.products[index].rank}",
+              style: GoogleFonts.schoolbell(fontSize: 28, color: bg),
+            ),
+            SizedBox(
+              width: 10,
+            ),
+          ]),
         ),
       ),
     );

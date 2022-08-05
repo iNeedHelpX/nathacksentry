@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nathacksentry/containers/comingsoon.dart';
 import 'package:nathacksentry/containers/neuromorphic_colourful.dart';
 import 'package:nathacksentry/containers/neuromorphic_warning.dart';
+import 'package:nathacksentry/pages/widgets/catalog_rats.dart';
 
 class AccountPage extends StatefulWidget {
   AccountPage({Key? key}) : super(key: key);
@@ -27,6 +28,7 @@ class _AccountPageState extends State<AccountPage> {
               SizedBox(
                 height: 20,
               ),
+              CatalogRats()
               //call the rats catalog
             ],
           ),
