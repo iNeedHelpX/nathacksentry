@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nathacksentry/controller/ratcontroller.dart';
 
+// the catalog of rats
 class RatsCatalog extends StatefulWidget {
   RatsCatalog({Key? key}) : super(key: key);
 
