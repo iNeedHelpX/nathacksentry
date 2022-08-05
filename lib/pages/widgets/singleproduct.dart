@@ -18,32 +18,22 @@ class SingleRat extends StatelessWidget {
                 offset: Offset(3, 2),
                 blurRadius: 7)
           ]),
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text("${rat!.rank}"),
-            // child: ClipRRect(
-            //     borderRadius: BorderRadius.only(
-            //       topLeft: Radius.circular(15),
-            //       topRight: Radius.circular(15),
-            //     ),
-            //     child: Image.network(
-            //       rat!.pic,
-            //       width: double.infinity,
-            //     )),
-          ),
-
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //   children: [
-          //     SizedBox(
-          //       width: 30,
-          //     ),
-          //   ],
-          // ),
-        ],
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(15),
+        child: FittedBox(
+          child: Image.network(rat!.pic),
+          fit: BoxFit.cover,
+        ),
       ),
+
+      // Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //   children: [
+      //     SizedBox(
+      //       width: 30,
+      //     ),
+      //   ],
+      // ),
     );
   }
 }

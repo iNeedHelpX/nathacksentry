@@ -27,7 +27,7 @@ class _AccountPageState extends State<AccountPage> {
               SizedBox(
                 height: 20,
               ),
-              CatalogRats(),
+              RatsWidget()
 
               //call the rats catalog
             ],
