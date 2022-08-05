@@ -13,7 +13,10 @@ class SpidersController extends GetxController {
     spiders.bindStream(getAllProducts());
   }
 
-  Stream<List<SpidersModel>> getAllProducts() =>
-      firebaseFirestore.collection(collection).snapshots().map((query) =>
+  Stream<List<SpidersModel>> getAllProducts() => firebaseFirestore
+      .collection(collection)
+      .orderBy('rank')
+      .snapshots()
+      .map((query) =>
           query.docs.map((item) => SpidersModel.fromMap(item.data())).toList());
 }

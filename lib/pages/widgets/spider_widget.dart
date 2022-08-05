@@ -13,11 +13,14 @@ class SpidersWidget extends StatelessWidget {
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         crossAxisCount: 2,
-        childAspectRatio: 1,
+        // childAspectRatio: .55,
         //around the boxes
         padding: const EdgeInsets.all(10),
-        mainAxisSpacing: 4.0,
-        crossAxisSpacing: 10,
+
+        //horizontal space
+        mainAxisSpacing: 10.0,
+        //vertical space between boxes
+        crossAxisSpacing: 12,
         children: spiderController.spiders.map((SpidersModel spider) {
           return SingleSpider(spider: spider);
         }).toList(),
@@ -42,32 +45,36 @@ class SingleSpider extends StatelessWidget {
                 offset: Offset(3, 2),
                 blurRadius: 7)
           ]),
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text("${spider!.rank}"),
-            // child: ClipRRect(
-            //     borderRadius: BorderRadius.only(
-            //       topLeft: Radius.circular(15),
-            //       topRight: Radius.circular(15),
-            //     ),
-            //     child: Image.network(
-            //       rat!.pic,
-            //       width: double.infinity,
-            //     )),
-          ),
-
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //   children: [
-          //     SizedBox(
-          //       width: 30,
-          //     ),
-          //   ],
-          // ),
-        ],
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(15),
+        child: FittedBox(
+          child: Image.network(spider!.pic),
+          fit: BoxFit.fill,
+        ),
       ),
+      // child: Column(
+      //   children: [
+      //     ClipRRect(
+      //         borderRadius: BorderRadius.only(
+      //           topLeft: Radius.circular(15),
+      //           topRight: Radius.circular(15),
+      //           bottomLeft: Radius.circular(15),
+      //         ),
+      //         child: Image.network(
+      //           spider!.pic,
+      //           width: double.infinity,
+      //         )),
+      //     Row(
+      //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //       children: [
+      //         SizedBox(
+      //           width: 30,
+      //         ),
+      //       ],
+      //     ),
+      //     Text("heelo")
+      //   ],
+      // ),
     );
   }
 }
