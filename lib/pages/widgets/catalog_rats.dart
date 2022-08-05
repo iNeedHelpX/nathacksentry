@@ -1,14 +1,11 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/colors/yellowpink_grad.dart';
-import 'package:nathacksentry/controller/ratcontroller.dart';
+import 'package:nathacksentry/globalvars.dart';
 
 class CatalogRats extends StatelessWidget {
-  final ratController = Get.put(RatController());
-
   CatalogRats({Key? key}) : super(key: key);
 
   @override
@@ -16,8 +13,9 @@ class CatalogRats extends StatelessWidget {
     return Obx(
       () => Flexible(
         child: ListView.builder(
-            shrinkWrap: true,
             scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
             itemCount: ratController.products.length,
             itemBuilder: (BuildContext context, int index) {
               return RatsCard(index: index);
@@ -28,9 +26,12 @@ class CatalogRats extends StatelessWidget {
 }
 
 class RatsCard extends StatelessWidget {
-  final RatController ratController = Get.find();
   final int index;
-  RatsCard({Key? key, required this.index}) : super(key: key);
+
+  RatsCard({
+    Key? key,
+    required this.index,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
+import 'package:nathacksentry/controller/ratcontroller.dart';
 import 'package:nathacksentry/pages/details.dart';
 import 'package:nathacksentry/pages/home_page.dart';
 
@@ -16,7 +17,7 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Home());
       case '/details':
         // Validation of correct data type. I can add different data types here
-        if (args is String && args is FirebaseFirestore) {
+        if (args is String && args is RatController) {
           return MaterialPageRoute(
             builder: (_) => DetailsPage(
               imgUrl: args, name: args,
