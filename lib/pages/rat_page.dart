@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nathacksentry/containers/comingsoon.dart';
-import 'package:nathacksentry/containers/neuromorphic_colourful.dart';
 import 'package:nathacksentry/containers/neuromorphic_warning.dart';
-import 'package:nathacksentry/pages/widgets/catalog_rats.dart';
+import 'package:nathacksentry/pages/widgets/rats_widget.dart';
 
 class AccountPage extends StatefulWidget {
   AccountPage({Key? key}) : super(key: key);
