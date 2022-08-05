@@ -119,6 +119,6 @@ class NewButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(30)),
         ),
         onPressed: () {},
-        child: Text("${spiderController.spiders[index].rank}"));
+        child: Text(spiderController.spiders[index].rank.toString()));
   }
 }

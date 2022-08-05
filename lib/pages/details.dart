@@ -7,12 +7,14 @@ import 'package:nathacksentry/globalvars.dart';
 class DetailsPage extends StatelessWidget {
   // final String imgUrl;
   final RatsControl ratsControl = Get.find();
-  final String name;
   final String index;
+
   final String imgUrl;
-  DetailsPage(
-      {Key? key, required this.name, required this.imgUrl, required this.index})
-      : super(key: key);
+  DetailsPage({
+    Key? key,
+    required this.imgUrl,
+    required this.index,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,7 @@ class DetailsPage extends StatelessWidget {
                         SizedBox(height: 20),
                         Container(
                           color: orangetext,
-                          child: Text(index),
+                          child: Text(index.toString()),
                         )
                       ],
                     ),

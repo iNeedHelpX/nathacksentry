@@ -13,7 +13,7 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     // Getting arguments passed in while calling Navigator.pushNamed. this allows me to get the arguments as dynamic data. Esssentially pass in the arguments
     final args = settings.arguments;
-
+    // final index = settings.arguments as int;
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => Home());
@@ -22,7 +22,6 @@ class RouteGenerator {
         if (args is String) {
           return MaterialPageRoute(
               builder: (_) => DetailsPage(
-                    name: args,
                     imgUrl: args,
                     index: args,
                   ));

@@ -5,6 +5,7 @@ import 'package:nathacksentry/colors/yellowpink_grad.dart';
 import 'package:nathacksentry/controller/second_ratcontroller.dart';
 import 'package:nathacksentry/globalvars.dart';
 import 'package:nathacksentry/model/rats_model.dart';
+import 'package:nathacksentry/pages/details.dart';
 import 'package:nathacksentry/pages/widgets/singleproduct.dart';
 
 //Grid of rats
@@ -63,10 +64,10 @@ class RatsCard extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(1, 25, 1, 0),
       child: GestureDetector(
         onTap: () {
-          Get.toNamed(
-            "/details",
-            arguments: ratsControl.rats[index].pic,
-          );
+          Get.to(() => DetailsPage(
+                imgUrl: ratsControl.rats[index].pic,
+                index: ratsControl.rats[index].rank.toString(),
+              ));
         },
         child: Container(
           padding: EdgeInsets.only(left: 10, right: 0),
@@ -84,7 +85,7 @@ class RatsCard extends StatelessWidget {
                 width: 22,
               ),
               Text(
-                "${ratsControl.rats[index].rank}",
+                ratsControl.rats[index].rank.toString(),
                 style: GoogleFonts.schoolbell(fontSize: 28),
               ),
               SizedBox(
