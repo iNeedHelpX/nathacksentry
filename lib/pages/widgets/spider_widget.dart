@@ -47,11 +47,11 @@ class CatalogSpider extends StatelessWidget {
           scrollDirection: Axis.vertical,
           physics: NeverScrollableScrollPhysics(),
           crossAxisCount: 2,
-          childAspectRatio: 1,
+          childAspectRatio: .66,
           //around the boxes
 
-          mainAxisSpacing: 15.0,
-          crossAxisSpacing: 6,
+          mainAxisSpacing: 5.0,
+          crossAxisSpacing: 10,
           children: spiderController.spiders.map((SpidersModel? spider) {
             return SpiderCard(
               spider: spider,
