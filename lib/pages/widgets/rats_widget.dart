@@ -20,11 +20,11 @@ class RatsWidget extends StatelessWidget {
         scrollDirection: Axis.vertical,
         physics: NeverScrollableScrollPhysics(),
         crossAxisCount: 2,
-        childAspectRatio: 1,
+        childAspectRatio: .65,
         //around the boxes
         padding: const EdgeInsets.all(10),
-        mainAxisSpacing: 2.0,
-        crossAxisSpacing: 5,
+        mainAxisSpacing: 4.0,
+        crossAxisSpacing: 10,
         children: ratController.rats.map((RatsModel? rat) {
           return SingleRat(
             rat: rat,
