@@ -53,4 +53,5 @@ If I were to grow this app I would ideally curate data from users and have a mor
 
 ## Screenshots from the app
 
-<p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076250-c1723c77-865b-4566-a8de-805b2e6b42eb.png" width="350">  <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076299-b83f647a-db53-4341-82b8-4c92e8a4a239.png" width="350"></p>
+<p align="center"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076250-c1723c77-865b-4566-a8de-805b2e6b42eb.png" width="350">  <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/182076299-b83f647a-db53-4341-82b8-4c92e8a4a239.png" width="350"><img alt="img-name" src="https://user-images.githubusercontent.com/41366455/183230837-846cd9e4-e67e-4a77-be82-4ec3b36125b4.png" width="350"> <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/183230839-31f56b04-f1f6-462c-a80d-8ea7fe5a88e1.png" width="350"> <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/183230846-aa5205ee-8d16-4938-9e3c-16aacb41d6f1.png" width="350"> <img alt="img-name" src="https://user-images.githubusercontent.com/41366455/183230847-6d63f4d6-37ab-4bfe-b9a3-2994059856dc.png" width="350">
+</p>
