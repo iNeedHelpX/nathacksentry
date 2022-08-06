@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
-import 'package:nathacksentry/controller/second_ratcontroller.dart';
 import 'package:nathacksentry/model/rats_model.dart';
 import 'package:nathacksentry/pages/rat_details.dart';
 

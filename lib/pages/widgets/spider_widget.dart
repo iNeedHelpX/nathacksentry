@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
-import 'package:nathacksentry/controller/second_spiders.dart';
 import 'package:nathacksentry/globalvars.dart';
 import 'package:nathacksentry/model/spiders_model.dart';
 import 'package:nathacksentry/pages/spider_details.dart';

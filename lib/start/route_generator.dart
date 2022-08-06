@@ -1,10 +1,6 @@
-import 'dart:ffi';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
-import 'package:nathacksentry/controller/second_ratcontroller.dart';
 import 'package:nathacksentry/pages/rat_details.dart';
 import 'package:nathacksentry/pages/home_page.dart';
 
