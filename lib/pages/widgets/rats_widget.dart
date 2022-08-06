@@ -80,10 +80,10 @@ class RatsCard extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(5.0),
             child: Row(children: [
-              CircleAvatar(
-                radius: 70,
-                backgroundImage: NetworkImage(ratsControl.rats[index].pic),
-              ),
+              // CircleAvatar(
+              //   radius: 70,
+              //   backgroundImage: NetworkImage(ratsControl.rats[index].pic),
+              // ),
               SizedBox(
                 width: 22,
               ),
