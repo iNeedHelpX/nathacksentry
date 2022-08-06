@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/controller/second_ratcontroller.dart';
 import 'package:nathacksentry/model/rats_model.dart';
-import 'package:nathacksentry/pages/details.dart';
+import 'package:nathacksentry/pages/rat_details.dart';
 
 class SingleRat extends StatelessWidget {
   final RatsModel? rat;
@@ -20,7 +20,7 @@ class SingleRat extends StatelessWidget {
       onTap: () {
         Get.to(() => RatsDetail(
               imgUrl: rat!.pic,
-              rank: rat!.rank,
+              index: rat!.rank,
             ));
       },
       child: Container(

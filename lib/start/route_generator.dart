@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/controller/second_ratcontroller.dart';
-import 'package:nathacksentry/pages/details.dart';
+import 'package:nathacksentry/pages/rat_details.dart';
 import 'package:nathacksentry/pages/home_page.dart';
 
 // Specify a function returning a route. By doing this, I still get the benefits of using named routes, but I now have the option to pass data to pages. This is possible, because unlike with a map literal, you can add logic to a function.
@@ -23,7 +23,7 @@ class RouteGenerator {
           return MaterialPageRoute(
               builder: (_) => RatsDetail(
                     imgUrl: args,
-                    rank: args as int,
+                    index: args as int,
                   ));
         }
         // If args is not of the correct type, return an error page.

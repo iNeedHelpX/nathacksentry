@@ -25,7 +25,7 @@ class _AppSetupState extends State<AppSetup> {
       controller: _controller,
       children: <Widget>[
         Home(),
-        ExposurePage(),
+        SpiderPage(),
         AccountPage(),
       ],
     );

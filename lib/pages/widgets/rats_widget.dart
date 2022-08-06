@@ -5,7 +5,7 @@ import 'package:nathacksentry/colors/yellowpink_grad.dart';
 import 'package:nathacksentry/controller/second_ratcontroller.dart';
 import 'package:nathacksentry/globalvars.dart';
 import 'package:nathacksentry/model/rats_model.dart';
-import 'package:nathacksentry/pages/details.dart';
+import 'package:nathacksentry/pages/rat_details.dart';
 import 'package:nathacksentry/pages/widgets/singleproduct.dart';
 
 //Grid of rats
@@ -69,7 +69,7 @@ class RatsCard extends StatelessWidget {
         onTap: () {
           Get.to(() => RatsDetail(
                 imgUrl: ratsControl.rats[index].pic,
-                rank: ratsControl.rats[index].rank,
+                index: ratsControl.rats[index].rank,
               ));
         },
         child: Container(
