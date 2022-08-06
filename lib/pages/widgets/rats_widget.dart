@@ -99,7 +99,7 @@ class RatsCard extends StatelessWidget {
                   child: Text(
                     "click to see rat ${rat!.rank}",
                     style: GoogleFonts.caveat(
-                      fontSize: 27,
+                      fontSize: 24,
                       fontWeight: FontWeight.w700,
                       color: gold,
                     ),
