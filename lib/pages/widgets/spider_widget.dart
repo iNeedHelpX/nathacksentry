@@ -3,7 +3,7 @@ import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
-import 'package:nathacksentry/controller/second_spiders.dart';
+import 'package:nathacksentry/controller/spider_controller.dart';
 import 'package:nathacksentry/globalvars.dart';
 import 'package:nathacksentry/model/spiders_model.dart';
 import 'package:nathacksentry/pages/spider_details.dart';

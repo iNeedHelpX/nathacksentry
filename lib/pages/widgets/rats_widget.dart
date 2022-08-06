@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/colors/yellowpink_grad.dart';
-import 'package:nathacksentry/controller/second_ratcontroller.dart';
+import 'package:nathacksentry/controller/rat_controller.dart';
 import 'package:nathacksentry/globalvars.dart';
 import 'package:nathacksentry/model/rats_model.dart';
 import 'package:nathacksentry/pages/rat_details.dart';
