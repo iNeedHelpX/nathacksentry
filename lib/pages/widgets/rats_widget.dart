@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gradients_reborn/flutter_gradients_reborn.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nathacksentry/colors/colours_list.dart';
 import 'package:nathacksentry/colors/yellowpink_grad.dart';
 import 'package:nathacksentry/controller/second_ratcontroller.dart';
 import 'package:nathacksentry/globalvars.dart';
@@ -21,8 +23,8 @@ class RatsWidget extends StatelessWidget {
         childAspectRatio: 1,
         //around the boxes
         padding: const EdgeInsets.all(10),
-        mainAxisSpacing: 4.0,
-        crossAxisSpacing: 10,
+        mainAxisSpacing: 2.0,
+        crossAxisSpacing: 5,
         children: ratController.rats.map((RatsModel? rat) {
           return SingleRat(
             rat: rat,
@@ -43,14 +45,22 @@ class CatalogRats extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       () => Flexible(
-        child: ListView.builder(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: ratController.rats.length,
-            itemBuilder: (BuildContext context, int index) {
-              return RatsCard(index: index);
-            }),
+        child: GridView.count(
+          shrinkWrap: true,
+          scrollDirection: Axis.vertical,
+          physics: NeverScrollableScrollPhysics(),
+          crossAxisCount: 2,
+          childAspectRatio: 1,
+          //around the boxes
+
+          mainAxisSpacing: 15.0,
+          crossAxisSpacing: 6,
+          children: ratController.rats.map((RatsModel? rat) {
+            return RatsCard(
+              rat: rat,
+            );
+          }).toList(),
+        ),
       ),
     );
   }
@@ -58,45 +68,47 @@ class CatalogRats extends StatelessWidget {
 
 class RatsCard extends StatelessWidget {
   final RatsControl ratsControl = Get.find();
-  final int index;
-  RatsCard({Key? key, required this.index}) : super(key: key);
+
+  final RatsModel? rat;
+  RatsCard({Key? key, required this.rat}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(1, 25, 1, 0),
-      child: GestureDetector(
-        onTap: () {
-          Get.to(() => RatsDetail(
-                imgUrl: ratsControl.rats[index].pic,
-                index: ratsControl.rats[index].rank,
-              ));
-        },
-        child: Container(
-          padding: EdgeInsets.only(left: 10, right: 0),
-          decoration: BoxDecoration(
-              gradient: yellowPinkGrad(),
-              borderRadius: BorderRadius.circular(15)),
-          child: Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Row(children: [
-              // CircleAvatar(
-              //   radius: 70,
-              //   backgroundImage: NetworkImage(ratsControl.rats[index].pic),
-              // ),
-              SizedBox(
-                width: 22,
+    return GestureDetector(
+      onTap: () {
+        Get.to(() => RatsDetail(
+              imgUrl: rat!.pic,
+              index: rat!.rank,
+            ));
+      },
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          ClipOval(
+            child: Container(
+              height: 180,
+              width: 180,
+              decoration: BoxDecoration(
+                  gradient:
+                      FlutterGradients.deepBlue2(tileMode: TileMode.clamp)),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Center(
+                  child: Text(
+                    "click to see rat ${rat!.rank}",
+                    style: GoogleFonts.caveat(
+                      fontSize: 27,
+                      fontWeight: FontWeight.w700,
+                      color: gold,
+                    ),
+                  ),
+                ),
               ),
-              Text(
-                ratsControl.rats[index].rank.toString(),
-                style: GoogleFonts.schoolbell(fontSize: 28),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-            ]),
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
