@@ -82,7 +82,7 @@ class SpiderDetails extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
                   child: Row(
-                    children: [RatTitle(index: index), HeartButton()],
+                    children: [SpiderTitle(index: index), HeartButton()],
                   ),
                 ),
                 Padding(
@@ -90,7 +90,7 @@ class SpiderDetails extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        "IDR 25,000.00",
+                        "Spider",
                         style: GoogleFonts.mako(
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
@@ -113,7 +113,7 @@ class SpiderDetails extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Text(
-                      "Shipped to the door",
+                      "Spiders seen her",
                       style: GoogleFonts.mali(
                         fontSize: 22,
                         fontWeight: FontWeight.w700,
@@ -243,8 +243,8 @@ class SpiderDetails extends StatelessWidget {
   }
 }
 
-class RatTitle extends StatelessWidget {
-  const RatTitle({
+class SpiderTitle extends StatelessWidget {
+  const SpiderTitle({
     Key? key,
     required this.index,
   }) : super(key: key);
